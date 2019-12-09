@@ -30,7 +30,8 @@ export class HomePage {
     // 获取通知内容
     this.jpush.onReceiveNotification().subscribe(event => {
       this.presentToast('receiveNotification')
-      this.event = event
+      this.event = event;
+      this.jpush.setBasicPushNotificationBuilder();
     }, err => {
       this.presentToast('receiveNotification-error')
     })
@@ -155,5 +156,9 @@ export class HomePage {
       this.userNotificationSettings = result
     })
   }
-
+  setBadge() {
+    /* this.jpush.setBadge(10);
+    this.jpush.setApplicationIconBadgeNumber(); */
+    this.jpush.setBasicPushNotificationBuilder();
+  }
 }

@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>通用API说明（同时适用于 Android 和 iOS 系统）</h1>
   <h4>注册事件</h4>
   <button ion-button block (click)="initEvent()">注册事件</button>
   事件信息:{{event|json}}
@@ -14,7 +13,7 @@
   <button ion-button block (click)="stopPush()">stopPush</button>
   <button ion-button block (click)="resumePush()">resumePush</button>
   <button ion-button block (click)="isPushStopped()">isPushStopped</button>
-  推送服务开启状态:{{isPushStoppedResult}}
+  推送服务开启状态(0代表成功):{{isPushStoppedResult}}
   <h4>开启 Debug 模式</h4>
   <button ion-button block (click)="setDebugMode(true)">setDebugMode</button>
   <h4>获取 RegistrationID</h4>
@@ -43,5 +42,6 @@
   <button ion-button block (click)="checkTagBindState()">checkTagBindState</button>
   <h4>判断系统设置中是否允许当前应用推送</h4>
   <button ion-button block (click)="getUserNotificationSettings()">getUserNotificationSettings</button>
-  设置情况:{{userNotificationSettings}}
+  设置情况(0代表成功):{{userNotificationSettings}}
+  <button ion-button block (click)="setBadge()">setBadge</button>
 </ion-content>

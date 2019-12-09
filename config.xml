@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pillarhou.monkey" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>jpush-demo</name>
+<widget id="mr.kang.practice.JPush" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>JPushDemo</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.1.8:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -78,13 +78,13 @@
     </platform>
     <allow-navigation href="http://192.168.1.8:8101" />
     <allow-navigation href="http://192.168.1.8:8100" />
-    <engine name="android" spec="6.3.0" />
     <plugin name="jpush-phonegap-plugin" spec="^3.2.12">
-        <variable name="APP_KEY" value="d9c2906b86435a674003068e" />
+        <variable name="APP_KEY" value="8c57ad18bdf08a6afab05e7a" />
     </plugin>
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
+    <engine name="android" spec="^7.0.0" />
 </widget>
